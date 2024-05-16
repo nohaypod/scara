@@ -7,9 +7,11 @@ Servo servo_9;
 void setup()
 {
   servo_9.attach(9);
+  Serial.begin(9600);
+  //Serial.println("Servos - Arduino");
 }
 
 void loop()
 {
-      servo_9.write(180);
+      Serial.println(servo_9.read());
 }
